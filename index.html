@@ -1,33 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>Weather Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Use a meta viewport tag to make the page responsive -->
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!-- Use Bootstrap to apply basic styling -->
+
 	<link rel="stylesheet" type="text/css" href="./Assets/style.css">
+	<!-- Add custom styles for the page -->
+
 </head>
 <body>
 	<header>
 		<h1>Weather Dashboard</h1>
+		<!-- Add an h1 element for the page title -->
+
 		<form id="search-form">
-			<input type="text" id="search-input" placeholder="Enter a city">
-			<button type="submit" id="search-btn">Search</button>
+			<label for="search-input" class="sr-only">Enter a city name</label>
+			<!-- Add a label for the search input for accessibility -->
+
+			<input type="text" id="search-input" placeholder="Enter a city name" aria-label="Enter a city name">
+			<!-- Add an aria-label attribute to the search input for accessibility -->
+
+			<button type="submit" id="search-btn" aria-label="Search">Search</button>
+			<!-- Add an aria-label attribute to the search button for accessibility -->
 		</form>
 	</header>
+
 	<main>
 		<div id="current-weather">
 			<h2 id="city-name"></h2>
+			<!-- Add an h2 element for the current city name -->
+
 			<p id="date"></p>
-			<img src="" alt="Weather icon" id="icon">
+
+			<img src="" alt="Weather icon" id="icon" aria-label="Weather icon">
+			<!-- Add an alt attribute and aria-label attribute to the weather icon image for accessibility -->
+
 			<p id="temperature"></p>
 			<p id="humidity"></p>
 			<p id="wind-speed"></p>
 		</div>
+
 		<div id="forecast">
 			<h2>5-Day Forecast:</h2>
 			<div class="row" id="forecast-cards">
 				<!-- Placeholder cards for the forecast data -->
 			</div>
 		</div>
+
 		<div id="search-history">
 			<h2>Search History:</h2>
 			<ul id="history-list">
@@ -35,7 +59,12 @@
 			</ul>
 		</div>
 	</main>
+
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!-- Include jQuery for making API requests and manipulating the DOM -->
+
 	<script src="./Assets/script.js"></script>
+	<!-- Add a script tag for your custom JavaScript code -->
+
 </body>
 </html>

@@ -1,93 +1,98 @@
 body {
 	font-family: Arial, sans-serif;
-}
-
-header {
-	background-color: #fff;
-	padding: 20px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-	font-size: 36px;
-	margin: 0;
-}
-
-form {
-	display: flex;
-	margin-top: 20px;
-}
-
-input[type="text"] {
-	flex-grow: 1;
-	padding: 10px;
-	font-size: 18px;
-	border: none;
-	border-top-left-radius: 4px;
-	border-bottom-left-radius: 4px;
-}
-
-button[type="submit"] {
-	padding: 10px 20px;
-	font-size: 18px;
+	background-color: #f2f2f2;
+  }
+  
+  header {
 	background-color: #007bff;
 	color: #fff;
-	border: none;
-	border-top-right-radius: 4px;
-	border-bottom-right-radius: 4px;
-	cursor: pointer;
-}
-
-main {
 	padding: 20px;
-}
-
-#current-weather, #forecast, #search-history {
-	margin-bottom: 20px;
-}
-
-#current-weather h2, #forecast h2, #search-history h2 {
-	margin-top: 0;
-}
-
-#current-weather p {
-	font-size: 24px;
-	margin: 10px 0;
-}
-
-#current-weather img {
-	margin: 10px 0;
-}
-
-.card {
-	border: none;
-	margin: 10px;
-}
-
-.card-header {
-	font-size: 18px;
-}
-
-.card-body {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
-	padding: 10px;
-}
-
-.card-body img {
-	margin: 10px 0;
-}
-
-#history-list li {
-	list-style: none;
-	margin: 10px 0;
-	padding: 10px;
-	background-color: #f2f2f2;
-	border-radius: 4px;
+  }
+  
+  h1 {
+	margin: 0;
+  }
+  
+  form {
+	display: flex;
+	align-items: center;
+  }
+  
+  label {
+	margin-right: 10px;
+	font-size: 16px;
+  }
+  
+  #search-input {
+	padding: 5px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	width: 200px;
+  }
+  
+  #search-btn {
+	padding: 5px 10px;
+	background-color: #fff;
+	color: #007bff;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
 	cursor: pointer;
-}
-
-#history-list li:hover {
-	background-color: #ddd;
-}
+  }
+  
+  #current-weather, #forecast, #search-history {
+	margin: 20px;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+  }
+  
+  #current-weather img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+  }
+  
+  #forecast-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .forecast-card {
+	width: 200px;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	overflow: hidden;
+  }
+  
+  .forecast-card img {
+	width: 50px;
+	height: 50px;
+  }
+  
+  .forecast-card p {
+	margin: 0;
+  }
+  
+  #history-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  #history-list li {
+	margin-bottom: 5px;
+	cursor: pointer;
+  }
+  
+  #history-list li:hover {
+	text-decoration: underline;
+  }
+  
